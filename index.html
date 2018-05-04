@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/P.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/P.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/共享onload事件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/共享onload事件/" itemprop="url">共享onload事件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:12:12+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>有多个函数再页面加载时都得到执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function addLoadEvent(func)&#123;</span><br><span class="line">  var oldonload=window.onload;</span><br><span class="line">  if(typeof window.onload!=&quot;function&quot;)&#123;</span><br><span class="line">   window.onload=func;</span><br><span class="line">  &#125;else&#123;</span><br><span class="line">   window.onload=function()&#123;</span><br><span class="line">     oldonload();</span><br><span class="line">     func();</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">addLoadEvent(firstFunction);</span><br><span class="line">addLoadEvent(secondFunction);</span><br></pre></td></tr></table></figure>
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/动态添加标记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/动态添加标记/" itemprop="url">动态添加标记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:12:12+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="DOM方法"><a href="#DOM方法" class="headerlink" title="DOM方法"></a>DOM方法</h4><h5 id="1-createElement"><a href="#1-createElement" class="headerlink" title="1. createElement"></a>1. createElement</h5><ol>
+<li>创建新标签，如”p”,”a”</li>
+<li>document.createElement(“nodeName”); <!--"p","a--></li>
+</ol>
+<h5 id="2-appendChild"><a href="#2-appendChild" class="headerlink" title="2. appendChild"></a>2. appendChild</h5><ol>
+<li>parent.appendChild(child);</li>
+<li>将child节点添加到parent中，默认在最后</li>
+</ol>
+<h5 id="3-createTextNode"><a href="#3-createTextNode" class="headerlink" title="3. createTextNode"></a>3. createTextNode</h5><ol>
+<li>创建文本节点</li>
+<li>document.createTextNode(“text”);</li>
+</ol>
+<h6 id="综合应用："><a href="#综合应用：" class="headerlink" title="综合应用："></a>综合应用：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">    window.onload=function()&#123;</span><br><span class="line">	var para=document.createElement(&quot;p&quot;);</span><br><span class="line">	var txt1=document.createTextNode(&quot;This is &quot;);</span><br><span class="line">	para.appendChild(txt1);</span><br><span class="line">	var em=document.createElement(&quot;em&quot;);</span><br><span class="line">	var txt2=document.createTextNode(&quot;my&quot;);</span><br><span class="line">	em.appendChild(txt2);</span><br><span class="line">	para.appendChild(em);</span><br><span class="line">	var txt3=document.createTextNode(&quot; content.&quot;);</span><br><span class="line">	para.appendChild(txt3);</span><br><span class="line">	var testdiv=document.getElementById(&quot;testdiv&quot;);</span><br><span class="line">	testdiv.appendChild(para);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="4-insertBefore"><a href="#4-insertBefore" class="headerlink" title="4. insertBefore"></a>4. insertBefore</h5><ol>
+<li>把一个新的元素插入到一个现有元素的前面</li>
+<li>parentElement.insertBefore(newElement,targetElement)<br>parentElement == targetElement.parentNode<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var targetElement=document.getElementById(&quot;id&quot;);</span><br><span class="line">targetElement.parentNode.insertBefore(newElement,targetElement);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="5-insertAfter"><a href="#5-insertAfter" class="headerlink" title="5. insertAfter"></a>5. insertAfter</h5><ol>
+<li>DOM没有这个方法</li>
+<li>自行创建<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   function insertAfter(newElement,targetElement)&#123;</span><br><span class="line">var parent=targetElement.parentNode;</span><br><span class="line">if(parent.lastChild==targetElement)&#123;</span><br><span class="line">	parent.appendChild(newElement);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">	parent.insertBefore(newElement,targetElement.nextSibling);</span><br><span class="line">&#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">addLoadEvent(prepareGallery);</span><br><span class="line">addLoadEvent(preparePlaceholder);</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/CSS-DOM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/CSS-DOM/" itemprop="url">CSS-DOM</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:12:12+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="获取样式"><a href="#获取样式" class="headerlink" title="获取样式"></a>获取样式</h4><ol>
+<li>element.style.属性  </li>
+<li>属性：  <ol>
+<li>style中font-size，DOM要求用驼峰法fontSize</li>
+<li>color:#999999 DOM会返回（153,153,153）</li>
+</ol>
+</li>
+</ol>
+<h4 id="设置样式"><a href="#设置样式" class="headerlink" title="设置样式"></a>设置样式</h4><ol>
+<li>element.style.属性=”属性值”;</li>
+</ol>
+<h4 id="何时该用DOM脚本设置样式"><a href="#何时该用DOM脚本设置样式" class="headerlink" title="何时该用DOM脚本设置样式"></a>何时该用DOM脚本设置样式</h4><ol>
+<li>CSS无法让我们找到想要处理的目标元素，如：找到 所有<code>&lt;h1&gt;</code>后的第一个元素节点  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function getNextElement(node)&#123;</span><br><span class="line">  if(node.nodeType==1)&#123;</span><br><span class="line">    return node;</span><br><span class="line">  &#125;</span><br><span class="line">  if(node.nextSibling)&#123;</span><br><span class="line">   return getNextElement(node.nextSibling);</span><br><span class="line">  &#125;</span><br><span class="line">  return null;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><code>var elem=getNextElement(headers[i].nextSibling);</code>  </p>
+<ol start="2">
+<li><p>表格设置奇偶行样式  </p>
+<ol>
+<li>如果浏览器支持CSS3，使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    tr:nth-child(odd)&#123;background:#fff&#125;   //odd奇数</span><br><span class="line">    tr:nth-child(even)&#123;background:#000&#125;   //even偶数</span><br><span class="line">    ```  </span><br><span class="line">   2. 如果不支持CSS3,为每一行添加class，如果数量多，维护不过来，这时候使用JavaScript  </span><br><span class="line"></span><br><span class="line">3. 响应事件</span><br><span class="line">   1. CSS提供`:hover`，像`a:hover&#123;...&#125;`得到很好的支持，但对于`tr:hover&#123;...&#125;`很多浏览器的支持不完整。</span><br><span class="line">   2. 用DOM改变HTML样式。如：</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>row[i].onmouseover=function(){<br>  this.style.fontWeigth=”bold”;<br>}<br>row[i].onmouseout=function(){……}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### className属性</span><br><span class="line">1. 之前一直在使用DOM直接设置或者修改样式</span><br><span class="line">2. 通过`element.className=&quot;类名&quot;`直接修改css样式表，可达到目的</span><br><span class="line">3. 默认是替换，应使用追加</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>function addClass(element,value){<br>  if(!element.className){<br>    element.className=value;<br>  }else{<br>    var newClassName=element.className;<br>    newClassName+=” “;<br>    newClassName+=value;<br>    element.className=newClassName;<br>  }<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">`addClass(elem,&quot;类名&quot;)`  </span><br><span class="line"></span><br><span class="line">4. JavaScript现在更新的是className属性，根本没碰style属性。确保了网页的表现层和行为层的分离的更彻底。  </span><br><span class="line"></span><br><span class="line">#### 对函数进行抽象</span><br><span class="line">1. 把一个非常具体的东西改进成一个较为通用的东西的过程叫做抽象</span><br><span class="line">2. 使用JavaScript对样式进行修改的抽象函数 （对tag的下一个元素节点进行样式设置）</span><br></pre></td></tr></table></figure></p>
+<p>function styleElementSibling(tag,theclass){<br>  if(!document.getElementByTagName) return false;<br>  var elems=document.getElementByTagName(tag);<br>  for(var i=0;i &lt; elems.length;i++){<br>   elem.getNextElement(elems[i].nextSibling); //tag的下一个元素节点<br>   addClass(tag,theclass);                    //使用className,添加类对应的样式<br>  }<br>}<br><code>`</code><br><code>styleElementSibling(&quot;元素结点名p,a&quot;,&quot;类名&quot;);</code>  </p>
+<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><ol>
+<li>只要有可能就是用className属性，而不是直接更新style对象的有关属性。</li>
+</ol>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/css3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/css3/" itemprop="url">css3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:12:12+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><p>向 div 元素添加圆角：</p>
+<pre><code>div
+{
+border:2px solid;
+border-radius:25px;
+-moz-border-radius:25px; /* Old Firefox */
+}
+</code></pre></li>
+<li><p>向 div 元素添加方框阴影：</p>
+<pre><code>div
+{
+box-shadow: 10px 10px 5px #888888;
+}
+</code></pre></li>
+<li><p>使用图片创建围绕 div 元素的边框：</p>
+<pre><code>div
+{
+border-image:url(border.png) 30 30 round;
+-moz-border-image:url(border.png) 30 30 round; /* 老的 Firefox */
+-webkit-border-image:url(border.png) 30 30 round; /* Safari 和 Chrome */
+-o-border-image:url(border.png) 30 30 round; /* Opera */
+}
+</code></pre></li>
+<li><p>调整背景图片的大小：</p>
+<pre><code>div
+{
+background:url(bg_flower.gif);
+-moz-background-size:63px 100px; /* 老版本的 Firefox */
+background-size:63px 100px;
+background-repeat:no-repeat;
+}
+</code></pre></li>
+<li><p>对背景图片进行拉伸，使其完成填充内容区域：</p>
+<pre><code>div
+{
+background:url(bg_flower.gif);
+-moz-background-size:40% 100%; /* 宽  高  老版本的 Firefox */
+background-size:40% 100%;
+background-repeat:no-repeat;
+}
+</code></pre></li>
+<li><p>在 content-box 中定位背景图片：</p>
+<pre><code>div
+{
+background:url(bg_flower.gif);
+background-repeat:no-repeat;
+background-size:100% 100%;
+-webkit-background-origin:content-box; /* Safari */
+background-origin:content-box; /*背景图片可以放置于 content-box、padding-box 或 border-box 区域。*/
+}
+</code></pre></li>
+<li><p>为 body 元素设置两幅背景图片：</p>
+<pre><code>body
+{ 
+background-image:url(bg_flower.gif),url(bg_flower_2.gif);
+}
+</code></pre></li>
+<li><p>向标题添加阴影：</p>
+<pre><code>h1
+{
+text-shadow: 5px 5px 5px #FF0000;
+}
+</code></pre></li>
+<li><p>@font-face</p>
+<pre><code>@font-face
+{
+font-family: myFirstFont;
+src: url(&apos;Sansation_Light.ttf&apos;),
+    url(&apos;Sansation_Light.eot&apos;); /* IE9+ */
+}
+
+div
+{
+font-family:myFirstFont;
+}
+</code></pre></li>
+<li><p>translate() 方法<br>通过 translate() 方法，元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数：</p>
+<pre><code>div
+{
+transform: translate(50px,100px);
+-ms-transform: translate(50px,100px);        /* IE 9 */
+-webkit-transform: translate(50px,100px);    /* Safari and Chrome */
+-o-transform: translate(50px,100px);        /* Opera */
+-moz-transform: translate(50px,100px);        /* Firefox */
+}
+</code></pre></li>
+<li><p>rotate() 方法<br>通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。</p>
+<pre><code>div
+{
+transform: rotate(30deg);
+-ms-transform: rotate(30deg);        /* IE 9 */
+-webkit-transform: rotate(30deg);    /* Safari and Chrome */
+-o-transform: rotate(30deg);        /* Opera */
+-moz-transform: rotate(30deg);        /* Firefox */
+}
+</code></pre></li>
+<li><p>scale() 方法<br>通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数：</p>
+<pre><code>div
+{
+transform: scale(2,4);
+-ms-transform: scale(2,4);    /* IE 9 */
+-webkit-transform: scale(2,4);    /* Safari 和 Chrome */
+-o-transform: scale(2,4);    /* Opera */
+-moz-transform: scale(2,4);    /* Firefox */
+}
+</code></pre></li>
+<li><p>skew() 方法<br>通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数：</p>
+<pre><code>div
+{
+transform: skew(30deg,20deg);
+-ms-transform: skew(30deg,20deg);    /* IE 9 */
+-webkit-transform: skew(30deg,20deg);    /* Safari and Chrome */
+-o-transform: skew(30deg,20deg);    /* Opera */
+-moz-transform: skew(30deg,20deg);    /* Firefox */
+}
+</code></pre></li>
+<li><p>过渡</p>
+<pre><code>transition: width 2s, height 2s, transform 2s;
+-moz-transition: width 2s, height 2s, -moz-transform 2s;
+-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+-o-transition: width 2s, height 2s,-o-transform 2s;
+</code></pre></li>
+<li><p>动画</p>
+<pre><code>div
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:myfirst 5s;
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+-o-animation:myfirst 5s; /* Opera */
+}
+
+@keyframes myfirst
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+</code></pre></li>
+<li><p>把 div 元素中的文本分隔为三列：</p>
+<pre><code>div
+{
+-moz-column-count:3;     /* Firefox */
+-webkit-column-count:3; /* Safari 和 Chrome */
+column-count:3;
+}
+</code></pre></li>
+<li><p>规定列之间 40 像素的间隔：</p>
+<pre><code>div
+{
+-moz-column-gap:40px;        /* Firefox */
+-webkit-column-gap:40px;    /* Safari 和 Chrome */
+column-gap:40px;
+}
+</code></pre></li>
+<li><p>规定列之间的宽度、样式和颜色规则：</p>
+<pre><code>div
+{
+-moz-column-rule:3px outset #ff0000;    /* Firefox */
+-webkit-column-rule:3px outset #ff0000;    /* Safari and Chrome */
+column-rule:3px outset #ff0000;
+}
+</code></pre></li>
+</ol>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/最佳实践/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/最佳实践/" itemprop="url">最佳实践</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:12:12+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="1-平稳退化"><a href="#1-平稳退化" class="headerlink" title="1. 平稳退化"></a>1. 平稳退化</h5><ol>
+<li><p>在html中 <code>&lt;a href=&quot;网址&quot;&gt;</code><br>在没有javascript的时候，可以点击跳转页面，返回需要按返回键</p>
+</li>
+<li><p>在.js中 <code>onclick=&quot;popUp(this.getAttribute(&#39;href&#39;))&quot;;return false;</code><br>点击事件，return false;是禁止默认的窗口打开</p>
+</li>
+</ol>
+<h5 id="2-分离JavaScript"><a href="#2-分离JavaScript" class="headerlink" title="2. 分离JavaScript"></a>2. 分离JavaScript</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">window.onload=prepareLinks;</span><br><span class="line">function prepareLinks()&#123;</span><br><span class="line">......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>window.onload<br>在html全部加载完毕后会触发onload事件</li>
+<li>加载一个函数，不需要（）。</li>
+</ol>
+<h5 id="3-向后兼容"><a href="#3-向后兼容" class="headerlink" title="3. 向后兼容"></a>3. 向后兼容</h5><p><code>if(!getElementById) { return false; }</code><br>  有些浏览器不支持使用DOM，或者被用户禁用了，所以要检测是否能识别该DOM函数，不能则返回false</p>
+<h5 id="4-性能考虑"><a href="#4-性能考虑" class="headerlink" title="4. 性能考虑"></a>4. 性能考虑</h5><h6 id="尽量少访问DOM和尽量减少标记"><a href="#尽量少访问DOM和尽量减少标记" class="headerlink" title="尽量少访问DOM和尽量减少标记"></a>尽量少访问DOM和尽量减少标记</h6><p>原：访问了两次DOM<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if(document.getElementsByTagName(&quot;a&quot;).length&gt;0)&#123;</span><br><span class="line">   var links=document.getElementsByTagName(&quot;a&quot;);</span><br><span class="line">   for()&#123;</span><br><span class="line">   ......</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>改：访问了一次DOM<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var links=document.getElementsByTagName(&quot;a&quot;);</span><br><span class="line">if(links.length&gt;0)&#123;</span><br><span class="line">  for()&#123;</span><br><span class="line">   ......</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h6 id="合并和放置脚本"><a href="#合并和放置脚本" class="headerlink" title="合并和放置脚本"></a>合并和放置脚本</h6><ol>
+<li>只用一个 .js 文件。</li>
+<li>把所有<code>&lt;script&gt;</code>标签放在文档末尾，<code>&lt;/body&gt;</code>之前。</li>
+</ol>
+<h6 id="压缩脚本"><a href="#压缩脚本" class="headerlink" title="压缩脚本"></a>压缩脚本</h6><ol>
+<li>js和css：<a href="http://tool.oschina.net/jscompress/" target="_blank" rel="noopener">http://tool.oschina.net/jscompress/</a></li>
+</ol>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/用JavaScript实现动画效果/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/用JavaScript实现动画效果/" itemprop="url">用JavaScript实现动画效果</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:12:12+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="动画基础知识"><a href="#动画基础知识" class="headerlink" title="动画基础知识"></a>动画基础知识</h4><ol>
+<li>位置  <ol>
+<li>position属性的合法值：static,fixed,relative,absolute</li>
+<li>方位，避免冲突：top/bottom,left/right</li>
+</ol>
+</li>
+<li><p>时间</p>
+<ol>
+<li><p><code>movement=setTimeout(&quot;function&quot;,interval);</code><br>第一个参数：通常是“字符串”<br>第二个参数：数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数给的函数<br>movement: 全局变量，可在其他地方被取消动作<code>clearTimeout(movement);</code>  </p>
+</li>
+<li><p>抽象    </p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">   function moveMessage(id,xx,yy,zz)&#123;    //xx是left终点，yy是top终点，zz是第二个参数毫秒</span><br><span class="line">if(!document.getElementById) return false;</span><br><span class="line">if(!document.getElementById(id)) return false;</span><br><span class="line">var elem=document.getElementById(id);</span><br><span class="line">var x=parseInt(elem.style.left);</span><br><span class="line">var y=parseInt(elem.style.top);</span><br><span class="line">if(x==xx&amp;&amp;y==yy)&#123;</span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line">if(x&lt;xx)&#123;</span><br><span class="line">	x++;                       //增加的像素可以自定义</span><br><span class="line">&#125;</span><br><span class="line">if(x&gt;xx)&#123;</span><br><span class="line">	x--;</span><br><span class="line">&#125;</span><br><span class="line">if(y&gt;yy)&#123;</span><br><span class="line">	y--;</span><br><span class="line">&#125;</span><br><span class="line">if(y&lt;yy)&#123;</span><br><span class="line">	y++;</span><br><span class="line">&#125;</span><br><span class="line">elem.style.left=x+&quot;px&quot;;                  //加上&quot;px&quot;成为字符串</span><br><span class="line">elem.style.top=y+&quot;px&quot;;</span><br><span class="line">movement=setTimeout(&quot;moveMessage(&apos;&quot;+id+&quot;&apos;,&quot;+xx+&quot;,&quot;+yy+&quot;,&quot;+zz+&quot;)&quot;,zz);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>对这句括号中的理解：<br><code>movement=setTimeout(&quot;moveMessage(&#39;&quot;+id+&quot;&#39;,&quot;+xx+&quot;,&quot;+yy+&quot;,&quot;+zz+&quot;)&quot;,zz);</code><br> 第一个参数是 字符串，括号中的参数也是由字符串组成，”moveMessage(“ 这是第一个，id是第二个，”‘,”是第三个，这三个就组成了<code>moveMessage(&#39;id&#39;,</code>，其中id是字符串，没有单引号会被解析成变量。   </p>
+<p>使用：<br><code>moveMessage(&quot;message&quot;,200,100,10);</code></p>
+</li>
+</ol>
+<h4 id="实用动画"><a href="#实用动画" class="headerlink" title="实用动画"></a>实用动画</h4><ol>
+<li>如果把<code>position:absolute</code>的元素A放入一个<code>position:relative</code>的元素B中，B就成为A的容器元素，A将在B的显示区域里按absolute方式进行摆放</li>
+<li><p>创建属性：<code>element.property=value</code><br>比如创建一个名为foo的属性，值为bar：<code>element.foo=&quot;bar&quot;</code>     </p>
+</li>
+<li><p>movement全局变量的停止处理：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(elem.movement)&#123;</span><br><span class="line">  clearTimeout(elem.movement);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">elem.movement=setTimeout(&quot;函数名&quot;，毫秒);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>把movement变成elem的属性，查询它是否存在，如果在moveElement函数执行时已经有一个movement属性，就用clearTimeout对它进行复位。  </p>
+<h4 id="使用到的一些函数"><a href="#使用到的一些函数" class="headerlink" title="使用到的一些函数"></a>使用到的一些函数</h4><p>1.<code>parseInt(&quot;字符串&quot;)</code> <code>parseFloat(&quot;字符串&quot;)</code>把字符串中的数值信息提取出来<br>2.<code>Math.ceil(number)</code>大于number的最小整数<br>  <code>Math.floor(number)</code>小于number的最大整数<br>  <code>Math.round(number)</code>最近number的整数  </p>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/显示快捷键清单/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/显示快捷键清单/" itemprop="url">显示快捷键清单</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:12:12+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">function addLoadEvent(func)&#123;</span><br><span class="line">  var oldonload=window.onload;</span><br><span class="line">  if(typeof window.onload!=&quot;function&quot;)&#123;</span><br><span class="line">   window.onload=func;</span><br><span class="line">  &#125;else&#123;</span><br><span class="line">   window.onload=function()&#123;</span><br><span class="line">     oldonload();</span><br><span class="line">     func();</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function displayAccesskeys()&#123;</span><br><span class="line">    if(!document.getElementById) return false;</span><br><span class="line">	if(!document.createElement) return false;</span><br><span class="line">	if(!document.createTextNode) return false;</span><br><span class="line">	var links=document.getElementsByTagName(&quot;a&quot;);</span><br><span class="line">	var akeys=new Array();</span><br><span class="line">	for(var i=0;i&lt;links.length;i++)&#123;</span><br><span class="line">		var current_link=links[i];</span><br><span class="line">		if(!current_link.getAttribute(&quot;accesskey&quot;)) continue;</span><br><span class="line">		var key=current_link.getAttribute(&quot;accesskey&quot;);</span><br><span class="line">		var text=current_link.lastChild.nodeValue;</span><br><span class="line">		akeys[key]=text;</span><br><span class="line">	&#125;</span><br><span class="line">	var list=document.createElement(&quot;ul&quot;);</span><br><span class="line">	for(key in akeys)&#123;           // key是下标，akeys是数组</span><br><span class="line">		var text=akeys[key];</span><br><span class="line">		var str=key+&quot;:&quot;+text;</span><br><span class="line">		var item=document.createElement(&quot;li&quot;);</span><br><span class="line">		var item_text=document.createTextNode(str);</span><br><span class="line">		item.appendChild(item_text);</span><br><span class="line">        list.appendChild(item);</span><br><span class="line">	&#125;</span><br><span class="line">	var header=document.createElement(&quot;h3&quot;);</span><br><span class="line">	var header_text=document.createTextNode(&quot;Accesskys&quot;);</span><br><span class="line">	header.appendChild(header_text);</span><br><span class="line">	document.body.appendChild(header);</span><br><span class="line">	document.body.appendChild(list);</span><br><span class="line">&#125;</span><br><span class="line">addLoadEvent(displayAccesskeys);</span><br></pre></td></tr></table></figure>
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/mysql/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/mysql/" itemprop="url">MySql</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:07:29+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><p>开启/关闭mysql<br><code>net start mysql</code><br><code>net stop mysql</code></p>
+</li>
+<li><p>进入/退出mysql<br><code>mysql -uroot -pmysql</code><br><code>exit</code></p>
+</li>
+<li><p>输入错误，回到上级<br><code>\c</code></p>
+</li>
+<li><p>创建数据库<br><code>CREATE DATABASE</code></p>
+</li>
+<li><p>修改数据库<br><code>ALTER DATABASE t2 CHARACTER SET = utf8;</code>  </p>
+</li>
+<li><p>显示所有数据库<br><code>SHOW DATABASES</code>  </p>
+</li>
+<li><p>显示某个数据库<br><code>SHOW CREATE DATABASE t2</code></p>
+</li>
+<li><p>删除数据库<br><code>DROP DATABASE t1;</code></p>
+</li>
+<li><p>使用数据库<br><code>USE 数据库名</code></p>
+</li>
+<li><p>创建表</p>
+<pre><code>CREATE TABLE tb1(
+-&gt; username VARCHAR(20),
+-&gt; age TINYINT UNSIGNED,
+-&gt; salary FLOAT(8,2) UNSIGNED
+-&gt; );
+</code></pre></li>
+<li><p>查看表<br><code>SHOW TABLES;</code><br><code>SHOW TABLES FROM mysql;</code></p>
+</li>
+<li><p>查看数据表结构<br><code>SHOW COLUMNS FROM tb1;</code></p>
+</li>
+<li><p>记录的插入<br><code>INSERT 表名 VALUES(全部数据)</code><br><code>INSERT 表名(行名) VALUES(部分数据)</code><br><code>INSERT users VALUES(NULL,&#39;JOHN&#39;,123,2,1);</code> NULL默认自动编号<br><code>INSERT users VALUES(DEFAULT,&#39;TOM&#39;,123,2,1);</code>   DEFAULT==NULL;<br><code>INSERT users SET username=&#39;BEN&#39;,password=&#39;456&#39;;</code></p>
+</li>
+<li><p>记录的查询<br><code>SELECT * FROM 表名</code></p>
+</li>
+<li><p>数据不能为空</p>
+<pre><code> CREATE TABLE tb2(
+-&gt; username VARCHAR(20) NOT NULL,
+-&gt; age TINYINT UNSIGNED NULL
+-&gt; );
+</code></pre></li>
+<li><p>主键PRIMARY KEY</p>
+<ol>
+<li><p>自动编号＋主键</p>
+<pre><code>CREATE TABLE tb3(
+-&gt; id SMALLINT UNSIGNED AUTO_INCREMENT     PRIMARY KEY,
+-&gt; username VARCHAR(30) NOT NULL
+-&gt; );
+</code></pre></li>
+<li><p>主键（无自动编号，不可重复数据）</p>
+<pre><code>CREATE TABLE tb4(
+-&gt; id SMALLINT UNSIGNED PRIMARY KEY,
+-&gt; username VARCHAR(30) NOT NULL
+-&gt; );
+</code></pre></li>
+</ol>
+</li>
+<li><p>唯一约束UNIQUE KEY<br><code>username VARCHAR(20) NOT NULL UNIQUE KEY,</code></p>
+</li>
+<li><p>默认值DEFAULT<br><code>sex ENUM(&#39;1&#39;,&#39;2&#39;,&#39;3&#39;) DEFAULT &#39;3&#39;</code></p>
+</li>
+<li><p>外键约束 FOREIGN KEY(子表的列名) REFERENCES 父表 (父表的列名)</p>
+<pre><code>CREATE TABLE provinces(
+-&gt; id SMALLINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+-&gt; pname VARCHAR(20) NOT NULL
+-&gt; );
+
+CREATE TABLE user(
+-&gt; id SMALLINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+-&gt; username VARCHAR(10) NOT NULL,
+-&gt; pid SMALLINT UNSIGNED,
+-&gt; FOREIGN KEY (pid) REFERENCES provinces (id)
+-&gt; );
+</code></pre></li>
+<li><p>添加删除列<br><code>ALTER TABLE users1 ADD password VARCHAR(30) NOT NULL AFTER username;</code><br><code>ALTER TABLE users1 DROP truename;</code></p>
+</li>
+<li><p>添加约束<br>主键约束：<code>ALTER TABLE users2 ADD CONSTRAINT PK_users2_id PRIMARY KEY (id);</code><br>唯一约束：<code>ALTER TABLE users2 ADD UNIQUE (username);</code><br>外键约束：<code>ALTER TABLE users2 ADD FOREIGN KEY (pid) REFERENCES provinces (id);</code><br>默认约束：<code>ALTER TABLE users2 ALTER age SET DEFAULT 15;</code><br>删除默认约束：<code>ALTER TABLE users2 ALTER age DROP DEFAULT;</code><br>删除唯一约束：</p>
+<pre><code>查看约束名：`SHOW INDEXES FROM users2\G;`
+删除索引：`ALTER TABLE users2 DROP INDEX username;`
+</code></pre><p>删除外键约束 ：</p>
+<pre><code>查看外键约束名：`SHOW CREATE TABLE   users2;`
+如CONSTRAINT `users2_ibfk_1`
+删除：ALTER TABLE users2 DROP FOREIGN KEY users2_ibfk_1;
+</code></pre></li>
+<li><p>查看约束名字<br>普通形式：<code>SHOW INDEXES FROM users2;</code><br>网格形式：<code>SHOW INDEXES FROM users2\G;</code></p>
+</li>
+<li><p>修改列定义 MODIFY<br><code>ALTER TABLE users2 MODIFY id TINYINT UNSIGNED NOT NULL FIRST;</code></p>
+</li>
+<li><p>修改列名称（同时修改列定义）<br><code>ALTER TABLE users2 CHANGE pid p_id TINYINT UNSIGNED NOT NULL;</code></p>
+</li>
+<li><p>修改数据表的名称<br><code>ALTER TABLE users2 RENAME users3;</code><br><code>RENAME TABLE users3 TO users2;</code></p>
+</li>
+<li><p>单表更新<br><code>UPDATE users SET age=age-id,sex=0;</code><br><code>UPDATE users SET age=age+10 WHERE id%2=0;</code></p>
+</li>
+<li><p>单表删除<br><code>DELETE FROM users WHERE id=6;</code><br>下一个插入的数据id不会是删除的这个。</p>
+</li>
+<li><p>查询数据<br><code>SELECT id,username FROM users;</code> 先id再username<br><code>SELECT username,id FROM users;</code> 先username再id<br><code>SELECT users.id,users.username FROM users;</code>某个数据表的列名用.</p>
+</li>
+<li><p>别名AS<br><code>SELECT id AS userID,username AS uname FROM users;</code>改成AS后的名字</p>
+</li>
+<li><p>GROUP BY 语句对查询结果分组<br><code>SELECT sex,age FROM users GROUP BY sex,age;</code></p>
+<pre><code>+------+-----+
+| sex  | age |
++------+-----+
+| NULL |  10 |
+|    0 |   4 |
+|    0 |   6 |
+|    0 |  15 |
+|    0 |  21 |
+|    1 |   2 |
++------+-----+
+</code></pre><p><code>SELECT sex FROM users GROUP BY sex HAVING count(id)&gt;3;</code></p>
+</li>
+<li><p>对查询结果进行排序[ASC|DESC]<br><code>SELECT * FROM users ORDER BY age DESC,id DESC;</code></p>
+</li>
+<li><p>限制查询数量<br><code>SELECT * FROM users LIMIT 2,2;</code> 从0开始算的</p>
+</li>
+<li><p>添加数据到另一个表<br><code>INSERT test(username) SELECT username FROM users WHERE age&gt;=10;</code></p>
+</li>
+<li></li>
+</ol>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T20:29:04+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+ <!-- <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+-->
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+<script type="text/javascript"
+color="0,0,255" opacity='0.7' zIndex="-2" count="80" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+undefined
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":"wanko","bottom":-30,"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/"});</script></body>
+</html>
