@@ -130,7 +130,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="动画基础知识 位置   position属性的合法值：static,fixed,relative,absolute 方位，避免冲突：top/bottom,left/right   时间  movement=setTimeout(&amp;quot;function&amp;quot;,interval);第一个参数：通常是“字符串”第二个参数：数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数给的函数m">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-02T14:22:57.702Z">
+<meta property="og:updated_time" content="2018-05-04T17:06:43.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用JavaScript实现动画效果">
 <meta name="twitter:description" content="动画基础知识 位置   position属性的合法值：static,fixed,relative,absolute 方位，避免冲突：top/bottom,left/right   时间  movement=setTimeout(&amp;quot;function&amp;quot;,interval);第一个参数：通常是“字符串”第二个参数：数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数给的函数m">
@@ -381,10 +381,8 @@
 </li>
 <li><p>时间</p>
 <ol>
-<li><p><code>movement=setTimeout(&quot;function&quot;,interval);</code><br>第一个参数：通常是“字符串”<br>第二个参数：数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数给的函数<br>movement: 全局变量，可在其他地方被取消动作<code>clearTimeout(movement);</code>  </p>
-</li>
-<li><p>抽象    </p>
-</li>
+<li><code>movement=setTimeout(&quot;function&quot;,interval);</code><br>第一个参数：通常是“字符串”<br>第二个参数：数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数给的函数<br>movement: 全局变量，可在其他地方被取消动作<code>clearTimeout(movement);</code>  <a id="more"></a>    </li>
+<li>抽象    </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">   function moveMessage(id,xx,yy,zz)&#123;    //xx是left终点，yy是top终点，zz是第二个参数毫秒</span><br><span class="line">if(!document.getElementById) return false;</span><br><span class="line">if(!document.getElementById(id)) return false;</span><br><span class="line">var elem=document.getElementById(id);</span><br><span class="line">var x=parseInt(elem.style.left);</span><br><span class="line">var y=parseInt(elem.style.top);</span><br><span class="line">if(x==xx&amp;&amp;y==yy)&#123;</span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line">if(x&lt;xx)&#123;</span><br><span class="line">	x++;                       //增加的像素可以自定义</span><br><span class="line">&#125;</span><br><span class="line">if(x&gt;xx)&#123;</span><br><span class="line">	x--;</span><br><span class="line">&#125;</span><br><span class="line">if(y&gt;yy)&#123;</span><br><span class="line">	y--;</span><br><span class="line">&#125;</span><br><span class="line">if(y&lt;yy)&#123;</span><br><span class="line">	y++;</span><br><span class="line">&#125;</span><br><span class="line">elem.style.left=x+&quot;px&quot;;                  //加上&quot;px&quot;成为字符串</span><br><span class="line">elem.style.top=y+&quot;px&quot;;</span><br><span class="line">movement=setTimeout(&quot;moveMessage(&apos;&quot;+id+&quot;&apos;,&quot;+xx+&quot;,&quot;+yy+&quot;,&quot;+zz+&quot;)&quot;,zz);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 <p>对这句括号中的理解：<br><code>movement=setTimeout(&quot;moveMessage(&#39;&quot;+id+&quot;&#39;,&quot;+xx+&quot;,&quot;+yy+&quot;,&quot;+zz+&quot;)&quot;,zz);</code><br> 第一个参数是 字符串，括号中的参数也是由字符串组成，”moveMessage(“ 这是第一个，id是第二个，”‘,”是第三个，这三个就组成了<code>moveMessage(&#39;id&#39;,</code>，其中id是字符串，没有单引号会被解析成变量。   </p>

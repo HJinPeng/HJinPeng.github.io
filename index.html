@@ -373,9 +373,7 @@
 
       
         
-          
-          有多个函数再页面加载时都得到执行1234567891011function addLoadEvent(func)&#123;  var oldonload=window.onload;  if(typeof window.onload!=&quot;function&quot;)&#123;   w
-          ...
+          <p>有多个函数再页面加载时都得到执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function addLoadEvent(func)&#123;</span><br><span class="line">  var oldonload=window.onload;</span><br><span class="line">  if(typeof window.onload!=&quot;function&quot;)&#123;</span><br><span class="line">   window.onload=func;</span><br><span class="line">  &#125;else&#123;</span><br><span class="line">   window.onload=function()&#123;</span><br><span class="line">     oldonload();</span><br><span class="line">     func();</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/共享onload事件/#more" rel="contents">
@@ -502,17 +500,13 @@
 
       
         
-          
-          DOM方法1. createElement
-创建新标签，如”p”,”a”
-document.createElement(“nodeName”); 
-
-2. appendChild
-parent.appendChild(child);
-将child节点添加到parent中，默认在最后
-
-3. crea
-          ...
+          <h4 id="DOM方法"><a href="#DOM方法" class="headerlink" title="DOM方法"></a>DOM方法</h4><h5 id="1-createElement"><a href="#1-createElement" class="headerlink" title="1. createElement"></a>1. createElement</h5><ol>
+<li>创建新标签，如”p”,”a”</li>
+<li>document.createElement(“nodeName”); <!--"p","a--></li>
+</ol>
+<h5 id="2-appendChild"><a href="#2-appendChild" class="headerlink" title="2. appendChild"></a>2. appendChild</h5><ol>
+<li>parent.appendChild(child);</li>
+<li>将child节点添加到parent中，默认在最后
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/动态添加标记/#more" rel="contents">
@@ -639,21 +633,17 @@ parent.appendChild(child);
 
       
         
-          
-          获取样式
-element.style.属性  
-属性：  
-style中font-size，DOM要求用驼峰法fontSize
-color:#999999 DOM会返回（153,153,153）
-
-
-
-设置样式
-element.style.属性=”属性值”;
-
-何时该用DOM脚本设置样式
-CSS无法
-          ...
+          <h4 id="获取样式"><a href="#获取样式" class="headerlink" title="获取样式"></a>获取样式</h4><ol>
+<li>element.style.属性  </li>
+<li>属性：  <ol>
+<li>style中font-size，DOM要求用驼峰法fontSize</li>
+<li>color:#999999 DOM会返回（153,153,153）</li>
+</ol>
+</li>
+</ol>
+<h4 id="设置样式"><a href="#设置样式" class="headerlink" title="设置样式"></a>设置样式</h4><ol>
+<li>element.style.属性=”属性值”;</li>
+</ol>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/CSS-DOM/#more" rel="contents">
@@ -780,21 +770,15 @@ CSS无法
 
       
         
-          
-          
-向 div 元素添加圆角：
-div
+          <ol>
+<li><p>向 div 元素添加圆角：</p>
+<pre><code>div
 {
 border:2px solid;
 border-radius:25px;
 -moz-border-radius:25px; /* Old Firefox */
 }
-
-向 div 元素添加方框阴影：
-div
-{
-box-shadow: 10px 10px 5
-          ...
+</code></pre>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/css3/#more" rel="contents">
@@ -921,12 +905,10 @@ box-shadow: 10px 10px 5
 
       
         
-          
-          1. 平稳退化
-在html中 &lt;a href=&quot;网址&quot;&gt;在没有javascript的时候，可以点击跳转页面，返回需要按返回键
-
-在.js中 onclick=&quot;popUp(this.getAttribute(&#39;href&#39;))&quot;;ret
-          ...
+          <h5 id="1-平稳退化"><a href="#1-平稳退化" class="headerlink" title="1. 平稳退化"></a>1. 平稳退化</h5><ol>
+<li><p>在html中 <code>&lt;a href=&quot;网址&quot;&gt;</code><br>在没有javascript的时候，可以点击跳转页面，返回需要按返回键</p>
+</li>
+<li><p>在.js中 <code>onclick=&quot;popUp(this.getAttribute(&#39;href&#39;))&quot;;return false;</code><br>点击事件，return false;是禁止默认的窗口打开</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/最佳实践/#more" rel="contents">
@@ -1053,17 +1035,15 @@ box-shadow: 10px 10px 5
 
       
         
-          
-          动画基础知识
-位置  
-position属性的合法值：static,fixed,relative,absolute
-方位，避免冲突：top/bottom,left/right
-
-
-时间
-
-movement=setTimeout(&quot;function&quot;,interval);第一个参数
-          ...
+          <h4 id="动画基础知识"><a href="#动画基础知识" class="headerlink" title="动画基础知识"></a>动画基础知识</h4><ol>
+<li>位置  <ol>
+<li>position属性的合法值：static,fixed,relative,absolute</li>
+<li>方位，避免冲突：top/bottom,left/right</li>
+</ol>
+</li>
+<li><p>时间</p>
+<ol>
+<li><code>movement=setTimeout(&quot;function&quot;,interval);</code><br>第一个参数：通常是“字符串”<br>第二个参数：数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数给的函数<br>movement: 全局变量，可在其他地方被取消动作<code>clearTimeout(movement);</code>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/用JavaScript实现动画效果/#more" rel="contents">
@@ -1191,15 +1171,8 @@ movement=setTimeout(&quot;function&quot;,interval);第一个参数
       
         
           
-          12345678910111213141516171819202122232425262728293031323334353637383940function addLoadEvent(func)&#123;  var oldonload=window.onload;  if(typeof wind
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/02/显示快捷键清单/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">function addLoadEvent(func)&#123;</span><br><span class="line">  var oldonload=window.onload;</span><br><span class="line">  if(typeof window.onload!=&quot;function&quot;)&#123;</span><br><span class="line">   window.onload=func;</span><br><span class="line">  &#125;else&#123;</span><br><span class="line">   window.onload=function()&#123;</span><br><span class="line">     oldonload();</span><br><span class="line">     func();</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function displayAccesskeys()&#123;</span><br><span class="line">    if(!document.getElementById) return false;</span><br><span class="line">	if(!document.createElement) return false;</span><br><span class="line">	if(!document.createTextNode) return false;</span><br><span class="line">	var links=document.getElementsByTagName(&quot;a&quot;);</span><br><span class="line">	var akeys=new Array();</span><br><span class="line">	for(var i=0;i&lt;links.length;i++)&#123;</span><br><span class="line">		var current_link=links[i];</span><br><span class="line">		if(!current_link.getAttribute(&quot;accesskey&quot;)) continue;</span><br><span class="line">		var key=current_link.getAttribute(&quot;accesskey&quot;);</span><br><span class="line">		var text=current_link.lastChild.nodeValue;</span><br><span class="line">		akeys[key]=text;</span><br><span class="line">	&#125;</span><br><span class="line">	var list=document.createElement(&quot;ul&quot;);</span><br><span class="line">	for(key in akeys)&#123;           // key是下标，akeys是数组</span><br><span class="line">		var text=akeys[key];</span><br><span class="line">		var str=key+&quot;:&quot;+text;</span><br><span class="line">		var item=document.createElement(&quot;li&quot;);</span><br><span class="line">		var item_text=document.createTextNode(str);</span><br><span class="line">		item.appendChild(item_text);</span><br><span class="line">        list.appendChild(item);</span><br><span class="line">	&#125;</span><br><span class="line">	var header=document.createElement(&quot;h3&quot;);</span><br><span class="line">	var header_text=document.createTextNode(&quot;Accesskys&quot;);</span><br><span class="line">	header.appendChild(header_text);</span><br><span class="line">	document.body.appendChild(header);</span><br><span class="line">	document.body.appendChild(list);</span><br><span class="line">&#125;</span><br><span class="line">addLoadEvent(displayAccesskeys);</span><br></pre></td></tr></table></figure>
+          
         
       
 	  <div>
@@ -1319,18 +1292,12 @@ movement=setTimeout(&quot;function&quot;,interval);第一个参数
 
       
         
-          
-          
-开启/关闭mysqlnet start mysqlnet stop mysql
-
-进入/退出mysqlmysql -uroot -pmysqlexit
-
-输入错误，回到上级\c
-
-创建数据库CREATE DATABASE
-
-修改数据库ALTER DATABASE t2 CHARACTER SET 
-          ...
+          <ol>
+<li><p>开启/关闭mysql<br><code>net start mysql</code><br><code>net stop mysql</code></p>
+</li>
+<li><p>进入/退出mysql<br><code>mysql -uroot -pmysql</code><br><code>exit</code></p>
+</li>
+<li><p>输入错误，回到上级<br><code>\c</code></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/mysql/#more" rel="contents">
@@ -1457,9 +1424,7 @@ movement=setTimeout(&quot;function&quot;,interval);第一个参数
 
       
         
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/02/hello-world/#more" rel="contents">

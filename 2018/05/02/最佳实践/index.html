@@ -123,17 +123,17 @@
 
 
 
-<meta name="description" content="1. 平稳退化 在html中 &amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;在没有javascript的时候，可以点击跳转页面，返回需要按返回键  在.js中 onclick=&amp;quot;popUp(this.getAttribute(&amp;#39;href&amp;#39;))&amp;quot;;return false;点击事件，return false;是禁止默认的窗口打开   2. 分离Java">
+<meta name="description" content="1. 平稳退化 在html中 &amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;在没有javascript的时候，可以点击跳转页面，返回需要按返回键  在.js中 onclick=&amp;quot;popUp(this.getAttribute(&amp;#39;href&amp;#39;))&amp;quot;;return false;点击事件，return false;是禁止默认的窗口打开">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最佳实践">
 <meta property="og:url" content="http://yoursite.com/2018/05/02/最佳实践/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1. 平稳退化 在html中 &amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;在没有javascript的时候，可以点击跳转页面，返回需要按返回键  在.js中 onclick=&amp;quot;popUp(this.getAttribute(&amp;#39;href&amp;#39;))&amp;quot;;return false;点击事件，return false;是禁止默认的窗口打开   2. 分离Java">
+<meta property="og:description" content="1. 平稳退化 在html中 &amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;在没有javascript的时候，可以点击跳转页面，返回需要按返回键  在.js中 onclick=&amp;quot;popUp(this.getAttribute(&amp;#39;href&amp;#39;))&amp;quot;;return false;点击事件，return false;是禁止默认的窗口打开">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-02T14:23:15.958Z">
+<meta property="og:updated_time" content="2018-05-04T17:06:54.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最佳实践">
-<meta name="twitter:description" content="1. 平稳退化 在html中 &amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;在没有javascript的时候，可以点击跳转页面，返回需要按返回键  在.js中 onclick=&amp;quot;popUp(this.getAttribute(&amp;#39;href&amp;#39;))&amp;quot;;return false;点击事件，return false;是禁止默认的窗口打开   2. 分离Java">
+<meta name="twitter:description" content="1. 平稳退化 在html中 &amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;在没有javascript的时候，可以点击跳转页面，返回需要按返回键  在.js中 onclick=&amp;quot;popUp(this.getAttribute(&amp;#39;href&amp;#39;))&amp;quot;;return false;点击事件，return false;是禁止默认的窗口打开">
 
 
 
@@ -377,6 +377,7 @@
 <li><p>在html中 <code>&lt;a href=&quot;网址&quot;&gt;</code><br>在没有javascript的时候，可以点击跳转页面，返回需要按返回键</p>
 </li>
 <li><p>在.js中 <code>onclick=&quot;popUp(this.getAttribute(&#39;href&#39;))&quot;;return false;</code><br>点击事件，return false;是禁止默认的窗口打开</p>
+<a id="more"></a>
 </li>
 </ol>
 <h5 id="2-分离JavaScript"><a href="#2-分离JavaScript" class="headerlink" title="2. 分离JavaScript"></a>2. 分离JavaScript</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">window.onload=prepareLinks;</span><br><span class="line">function prepareLinks()&#123;</span><br><span class="line">......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
