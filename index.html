@@ -303,6 +303,228 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/mardown基本语法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HJinPeng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HJinPeng">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/05/mardown基本语法/" itemprop="url">mardown基本语法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-05T10:18:00+08:00">
+                2018-05-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="一、-标题"><a href="#一、-标题" class="headerlink" title="一、 标题"></a>一、 标题</h3><h4 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h4><blockquote>
+<ol>
+<li><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></li>
+<li><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></li>
+<li><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3></li>
+<li><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4></li>
+<li><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5></li>
+<li><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
+</ol>
+</blockquote>
+<h4 id="2-标题下用-和-标记（amount-gt-3）"><a href="#2-标题下用-和-标记（amount-gt-3）" class="headerlink" title="2. 标题下用 = 和 - 标记（amount&gt;3）"></a>2. 标题下用 = 和 - 标记（amount&gt;3）</h4><blockquote>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<p><br></p>
+<h3 id="二、有序列表、无序列表"><a href="#二、有序列表、无序列表" class="headerlink" title="二、有序列表、无序列表"></a>二、有序列表、无序列表</h3><h4 id="1-无序列表（-）"><a href="#1-无序列表（-）" class="headerlink" title="1. 无序列表（- \ + \ *）"></a>1. 无序列表（- \ + \ *）</h4><blockquote>
+<ul>
+<li>red</li>
+</ul>
+<ul>
+<li>yellow</li>
+</ul>
+<ul>
+<li>blue</li>
+</ul>
+</blockquote>
+<h4 id="2-有序列表（数字＋-）"><a href="#2-有序列表（数字＋-）" class="headerlink" title="2. 有序列表（数字＋ . ）"></a>2. 有序列表（数字＋ . ）</h4><blockquote>
+<ol>
+<li>red</li>
+<li>yellow</li>
+<li>blue</li>
+</ol>
+</blockquote>
+<p><br></p>
+<h3 id="三、-引用（-gt-空格）"><a href="#三、-引用（-gt-空格）" class="headerlink" title="三、 引用（&gt; + 空格）"></a>三、 引用（&gt; + 空格）</h3><blockquote>
+<p>一级引用</p>
+<pre><code>代码块引用
+</code></pre><p>代码：</p>
+<pre><code>$(function(){
+var x=10;
+var y=20;
+$(&quot;a.tooltip&quot;).mouseover(function(e){
+this.myTitle=this.title;
+this.title=&quot;&quot;;
+var tooltip=&quot;&lt;div id=&apos;tooltip&apos;&gt;&quot;+this.myTitle+&quot;&lt;/div&gt;&quot;;
+$(&quot;body&quot;).append(tooltip);
+$(&quot;#tooltip&quot;)
+    .css({
+        &quot;top&quot;:(e.pageY+y)+&quot;px&quot;,
+        &quot;left&quot;:(e.pageX+x)+&quot;px&quot;
+    }).show(&quot;fast&quot;);
+}).mouseout(function(e){
+this.title=this.myTitle;
+$(&quot;#tooltip&quot;).remove();
+}).mousemove(function(e){
+$(&quot;#tooltip&quot;)
+   .css({
+       &quot;top&quot;:(e.pageY+y)+&quot;px&quot;,
+        &quot;left&quot;:(e.pageX+x)+&quot;px&quot;
+   });
+});
+})
+</code></pre></blockquote>
+<blockquote>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><br></p>
+<h3 id="四、-强调"><a href="#四、-强调" class="headerlink" title="四、 强调"></a>四、 强调</h3><ul>
+<li><strong>加粗</strong>：两个 * 或 -</li>
+<li><em>斜体</em>：一个 * 或 -</li>
+<li><del>删除</del>: 两个 ~~ 包围删除文本</li>
+</ul>
+<p><br></p>
+<h3 id="五、-图片和链接"><a href="#五、-图片和链接" class="headerlink" title="五、 图片和链接"></a>五、 图片和链接</h3><blockquote>
+<p>图片：<img src="" alt=""><br>链接：<a href=""></a></p>
+<blockquote>
+<p>行内式链接：<a href="https://www.baidu.com/" target="_blank" rel="noopener">百度一下</a><br>参考式链接：[我的博客][url]<br>[url]:<a href="https://hjinpeng.github.io/" target="_blank" rel="noopener">https://hjinpeng.github.io/</a></p>
+</blockquote>
+</blockquote>
+<p><br></p>
+<h3 id="六、-代码"><a href="#六、-代码" class="headerlink" title="六、 代码"></a>六、 代码</h3><ul>
+<li>行内代码：使用` 内容 `。<code>行内代码</code></li>
+<li>代码块：使用```  内容 ```  </li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>index<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">media</span>=<span class="string">"screen"</span> <span class="attr">href</span>=<span class="string">"css/main.css"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"scripts/jquery-3.3.1.min.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"panel"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"scripts/main.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="七、分割线"><a href="#七、分割线" class="headerlink" title="七、分割线"></a>七、分割线</h3><p>在一行用三个以上的 * 或 - 或 _</p>
+<blockquote>
+<hr>
+</blockquote>
+<blockquote>
+<hr>
+</blockquote>
+<blockquote>
+<hr>
+</blockquote>
+<h3 id="八、-脚注"><a href="#八、-脚注" class="headerlink" title="八、 脚注"></a>八、 脚注</h3><p>使用[^]: 脚注[^1]<br>[^1]: 脚注1</p>
+
+          
+        
+      
+	  <div>
+  
+</div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/共享onload事件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1536,7 +1758,7 @@ border-radius:25px;
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1553,6 +1775,15 @@ border-radius:25px;
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
