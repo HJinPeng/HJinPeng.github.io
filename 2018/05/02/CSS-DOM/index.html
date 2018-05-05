@@ -131,7 +131,7 @@
 <meta property="og:site_name" content="HJinPeng">
 <meta property="og:description" content="获取样式 element.style.属性   属性：   style中font-size，DOM要求用驼峰法fontSize color:#999999 DOM会返回（153,153,153）    设置样式 element.style.属性=”属性值”;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-05T02:48:47.025Z">
+<meta property="og:updated_time" content="2018-05-05T11:24:04.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS-DOM">
 <meta name="twitter:description" content="获取样式 element.style.属性   属性：   style中font-size，DOM要求用驼峰法fontSize color:#999999 DOM会返回（153,153,153）    设置样式 element.style.属性=”属性值”;">
@@ -409,22 +409,65 @@
 </ol>
 <a id="more"></a>
 <h4 id="何时该用DOM脚本设置样式"><a href="#何时该用DOM脚本设置样式" class="headerlink" title="何时该用DOM脚本设置样式"></a>何时该用DOM脚本设置样式</h4><ol>
-<li>CSS无法让我们找到想要处理的目标元素，如：找到 所有<code>&lt;h1&gt;</code>后的第一个元素节点  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function getNextElement(node)&#123;</span><br><span class="line">  if(node.nodeType==1)&#123;</span><br><span class="line">    return node;</span><br><span class="line">  &#125;</span><br><span class="line">  if(node.nextSibling)&#123;</span><br><span class="line">   return getNextElement(node.nextSibling);</span><br><span class="line">  &#125;</span><br><span class="line">  return null;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>CSS无法让我们找到想要处理的目标元素，如：找到 所有<code>&lt;h1&gt;</code>后的第一个元素节点  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getNextElement</span>(<span class="params">node</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(node.nodeType==<span class="number">1</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> node;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(node.nextSibling)&#123;</span><br><span class="line">   <span class="keyword">return</span> getNextElement(node.nextSibling);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><code>var elem=getNextElement(headers[i].nextSibling);</code>  </p>
 <ol start="2">
 <li><p>表格设置奇偶行样式  </p>
 <ol>
-<li>如果浏览器支持CSS3，使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    tr:nth-child(odd)&#123;background:#fff&#125;   //odd奇数</span><br><span class="line">    tr:nth-child(even)&#123;background:#000&#125;   //even偶数</span><br><span class="line">    ```  </span><br><span class="line">   2. 如果不支持CSS3,为每一行添加class，如果数量多，维护不过来，这时候使用JavaScript  </span><br><span class="line"></span><br><span class="line">3. 响应事件</span><br><span class="line">   1. CSS提供`:hover`，像`a:hover&#123;...&#125;`得到很好的支持，但对于`tr:hover&#123;...&#125;`很多浏览器的支持不完整。</span><br><span class="line">   2. 用DOM改变HTML样式。如：</span><br></pre></td></tr></table></figure>
+<li>如果浏览器支持CSS3，使用<pre><code class="css">tr:nth-child(odd){background:#fff}   //odd奇数
+tr:nth-child(even){background:#000}   //even偶数
+</code></pre>
+</li>
+<li>如果不支持CSS3,为每一行添加class，如果数量多，维护不过来，这时候使用JavaScript  </li>
+</ol>
+</li>
+<li><p>响应事件</p>
+<ol>
+<li>CSS提供<code>:hover</code>，像<code>a:hover{...}</code>得到很好的支持，但对于<code>tr:hover{...}</code>很多浏览器的支持不完整。</li>
+<li>用DOM改变HTML样式。如：  <pre><code class="JavaScript">row[i].onmouseover=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+<span class="keyword">this</span>.style.fontWeigth=<span class="string">"bold"</span>;
+}
+row[i].onmouseout=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{......}
+</code></pre>
 </li>
 </ol>
-<p>row[i].onmouseover=function(){<br>  this.style.fontWeigth=”bold”;<br>}<br>row[i].onmouseout=function(){……}</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### className属性</span><br><span class="line">1. 之前一直在使用DOM直接设置或者修改样式</span><br><span class="line">2. 通过`element.className=&quot;类名&quot;`直接修改css样式表，可达到目的</span><br><span class="line">3. 默认是替换，应使用追加</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>function addClass(element,value){<br>  if(!element.className){<br>    element.className=value;<br>  }else{<br>    var newClassName=element.className;<br>    newClassName+=” “;<br>    newClassName+=value;<br>    element.className=newClassName;<br>  }<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">`addClass(elem,&quot;类名&quot;)`  </span><br><span class="line"></span><br><span class="line">4. JavaScript现在更新的是className属性，根本没碰style属性。确保了网页的表现层和行为层的分离的更彻底。  </span><br><span class="line"></span><br><span class="line">#### 对函数进行抽象</span><br><span class="line">1. 把一个非常具体的东西改进成一个较为通用的东西的过程叫做抽象</span><br><span class="line">2. 使用JavaScript对样式进行修改的抽象函数 （对tag的下一个元素节点进行样式设置）</span><br></pre></td></tr></table></figure></p>
-<p>function styleElementSibling(tag,theclass){<br>  if(!document.getElementByTagName) return false;<br>  var elems=document.getElementByTagName(tag);<br>  for(var i=0;i &lt; elems.length;i++){<br>   elem.getNextElement(elems[i].nextSibling); //tag的下一个元素节点<br>   addClass(tag,theclass);                    //使用className,添加类对应的样式<br>  }<br>}<br><code>`</code><br><code>styleElementSibling(&quot;元素结点名p,a&quot;,&quot;类名&quot;);</code>  </p>
+<h4 id="className属性"><a href="#className属性" class="headerlink" title="className属性"></a>className属性</h4><ol>
+<li>之前一直在使用DOM直接设置或者修改样式</li>
+<li>通过<code>element.className=&quot;类名&quot;</code>直接修改css样式表，可达到目的</li>
+<li><p>默认是替换，应使用追加  </p>
+<pre><code class="JavaScript"><span class="function"><span class="keyword">function</span> <span class="title">addClass</span>(<span class="params">element,value</span>)</span>{
+<span class="keyword">if</span>(!element.className){
+ element.className=value;
+}<span class="keyword">else</span>{
+ <span class="keyword">var</span> newClassName=element.className;
+ newClassName+=<span class="string">" "</span>;
+ newClassName+=value;
+ element.className=newClassName;
+}
+}
+</code></pre>
+<p><code>addClass(elem,&quot;类名&quot;)</code>  </p>
+</li>
+<li><p>JavaScript现在更新的是className属性，根本没碰style属性。确保了网页的表现层和行为层的分离的更彻底。  </p>
+</li>
+</ol>
+<h4 id="对函数进行抽象"><a href="#对函数进行抽象" class="headerlink" title="对函数进行抽象"></a>对函数进行抽象</h4><ol>
+<li>把一个非常具体的东西改进成一个较为通用的东西的过程叫做抽象</li>
+<li>使用JavaScript对样式进行修改的抽象函数 （对tag的下一个元素节点进行样式设置）  <pre><code class="JavaScript"><span class="function"><span class="keyword">function</span> <span class="title">styleElementSibling</span>(<span class="params">tag,theclass</span>)</span>{
+<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementByTagName) <span class="keyword">return</span> <span class="literal">false</span>;
+<span class="keyword">var</span> elems=<span class="built_in">document</span>.getElementByTagName(tag);
+<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i &lt; elems.length;i++){
+elem.getNextElement(elems[i].nextSibling); <span class="comment">//tag的下一个元素节点</span>
+addClass(tag,theclass);                    <span class="comment">//使用className,添加类对应的样式</span>
+}
+}
+</code></pre>
+<code>styleElementSibling(&quot;元素结点名p,a&quot;,&quot;类名&quot;);</code>  </li>
+</ol>
 <h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><ol>
 <li>只要有可能就是用className属性，而不是直接更新style对象的有关属性。</li>
 </ol>
@@ -611,7 +654,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#获取样式"><span class="nav-number">1.</span> <span class="nav-text">获取样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置样式"><span class="nav-number">2.</span> <span class="nav-text">设置样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#何时该用DOM脚本设置样式"><span class="nav-number">3.</span> <span class="nav-text">何时该用DOM脚本设置样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小结"><span class="nav-number">4.</span> <span class="nav-text">小结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#获取样式"><span class="nav-number">1.</span> <span class="nav-text">获取样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置样式"><span class="nav-number">2.</span> <span class="nav-text">设置样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#何时该用DOM脚本设置样式"><span class="nav-number">3.</span> <span class="nav-text">何时该用DOM脚本设置样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#className属性"><span class="nav-number">4.</span> <span class="nav-text">className属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对函数进行抽象"><span class="nav-number">5.</span> <span class="nav-text">对函数进行抽象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小结"><span class="nav-number">6.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
